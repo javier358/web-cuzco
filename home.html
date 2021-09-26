@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cusco Travel</title>
+	<!-- favion -->
+	<link rel="icon" type="image/png" sizes="16x16" href="img/banner/logo16x16.png">
+	<!-- link to font awesome -->
+	<link media="all" rel="stylesheet" href="vendors/font-awesome/css/font-awesome.css">
+	<!-- link to custom icomoon fonts -->
+	<link rel="stylesheet" type="text/css" href="css/fonts/icomoon/icomoon.css">
+	<!-- link to wow js animation -->
+	<link media="all" rel="stylesheet" href="vendors/animate/animate.css">
+	<!-- include bootstrap css -->
+	<link media="all" rel="stylesheet" href="css/bootstrap.css">
+	<!-- include owl css -->
+	<link media="all" rel="stylesheet" href="vendors/owl-carousel/owl.carousel.css">
+	<link media="all" rel="stylesheet" href="vendors/owl-carousel/owl.theme.css">
+	<!-- link to revolution css  -->
+	<link rel="stylesheet" type="text/css" href="vendors/revolution/css/settings.css">
+	<!-- include main css -->
+	<link media="all" rel="stylesheet" href="css/main.css">
+	<link media="all" rel="stylesheet" href="css/skins/color-2.css">
+</head>
+<body>
+	<div class="preloader" id="pageLoad">
+		<div class="holder">
+			<div class="coffee_cup"></div>
+		</div>
+	</div>
+	<!-- main wrapper -->
+	<div id="wrapper">
+		<div class="page-wrapper">
+			<!-- main header -->
+			<header id="header">
+				<div class="container-fluid">
+					<!-- logo -->
+					<div class="logo">
+						<a href="home.html">
+							<img class="normal" src="img/banner/cusco-logo.png" alt="Entrada">
+							<img class="gray-logo" src="img/banner/cusco-logo.png" alt="Entrada">
+						</a>
+					</div>
+					<!-- main navigation -->
+					<nav class="navbar navbar-default">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle nav-opener" data-toggle="collapse" data-target="#nav">
+								<span class="sr-only">navegar</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- main menu items and drop for mobile -->
+						<div class="collapse navbar-collapse" id="nav">
+							<!-- main navbar -->
+							<ul class="nav navbar-nav">
+								<li><a href="home.html">Inicio</a></li>
+								<li><a href="Cultura.html">Cultura</a></li>
+								<li><a href="Relatos.html">Relatos</a></li>
+								<li><a href="Historia.html">Historia</a></li>
+								<li><a href="Flora_Fauna.html">Flora y Fauna</a></li>	
+								<li><a href="paquetes.html">Paquetes Turisticos</a></li>		
+								
+							
+								<li class="visible-xs visible-sm">
+									<a href="login.html">
+										<span class="icon icon-user"></span>
+										<span class="text">Logearse</span>
+									</a>
+								</li>
+								<li class="hidden-xs hidden-sm v-divider">
+									<a href="login.html">
+										<span class="icon icon-user"></span>
+									</a>
+								</li>
+								
+								
+								<li class="visible-md visible-lg nav-visible v-divider"><a href="#" class="search-opener"><span class="icon icon-search"></span></a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<!-- search form -->
+				<form class="search-form" action="#">
+					<fieldset>
+						<a href="#" class="search-opener hidden-md hidden-lg">
+							<span class="icon-search"></span>
+						</a>
+						<div class="search-wrap">
+							<a href="#" class="search-opener close">
+								<span class="icon-cross"></span>
+							</a>
+							<div class="trip-form trip-form-v2 trip-search-main">
+								<div class="trip-form-wrap">
+									<div class="holder">
+										<label>Fecha Salida</label>
+										<div class='select-holder'>
+											<div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+												<input class="form-control" type="text" readonly />
+												<span class="input-group-addon"><i class="icon-drop"></i></span>
+											</div>
+										</div>
+									</div>
+									<div class="holder">
+										<label>Fecha Retorno</label>
+										<div class='select-holder'>
+											<div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+												<input class="form-control" type="text" readonly />
+												<span class="input-group-addon"><i class="icon-drop"></i></span>
+											</div>
+										</div>
+									</div>
+									<div class="holder">
+										<label for="select-region">Selecciona tu destino</label>
+										<div class='select-holder'>
+											<select class="trip-select trip-select-v2 region" name="region" id="select-region">
+												<option value="select">Cuzco</option>
+												<option value="select">Arequipa</option>
+												<option value="select">Tumbes</option>
+												<option value="select">Lima</option>
+												<option value="select">Trujillo</option>
+											</select>
+										</div>
+									</div>
+									<div class="holder">
+										<label for="select-activity">Seleciona una Actividad</label>
+										<div class='select-holder'>
+											<select class="trip-select trip-select-v2 acitvity" name="activity" id="select-activity">
+												<option value="Holiday Type">Paseos</option>
+												<option value="Holiday Type">Fiesta Nocturna</option>
+												<option value="Holiday Type">Negocios</option>
+												<option value="Holiday Type">Visitas a Museos</option>
+												<option value="Holiday Type">Deportes Acuaticos</option>
+												<option value="Holiday Type">Deportes Extremos</option>
+											</select>
+										</div>
+									</div>
+									<div class="holder">
+										<label for="price-range">Medio de Transporte</label>
+										<div class='select-holder'>
+											<select class="trip-select trip-select-v2 price" name="activity" id="price-range">
+												<option value="Price Range">Avión</option>
+												<option value="Price Range">Autobus</option>
+												<option value="Price Range">Autobus Vip</option>
+												<option value="Price Range">Transporte Privado</option>
+												<option value="Price Range">Limusina</option>
+												<option value="Price Range">Yate Privado</option>
+											</select>
+										</div>
+									</div>
+									<div class="holder">
+										<button class="btn btn-trip btn-trip-v2" type="submit">Buscar mi viaje</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</header>
+			<!-- main banner -->
+			<div class="banner banner-home">
+				<!-- revolution slider starts -->
+				<div id="rev_slider_70_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="web-product-light-hero66" style="margin:0px auto;background-color:#474d4b;padding:0px;margin-top:0px;margin-bottom:0px;">
+					<div id="rev_slider_70_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
+						<ul>
+							<li class="slider-color-schema-dark" data-index="rs-2" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
+								<!-- main image for revolution slider -->
+								<img src="img/banner/cuzco1.jpg" alt="image description" data-bgposition="center bottom" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
+								<div class="tp-caption tp-resizeme" id="slide-897-layer-7" 
+									data-x="['center','center','center','center']" 
+									data-hoffset="['0','0','0','0']" 
+									data-y="['top','top','middle','middle']" 
+									data-voffset="['160','120','-120','-70']" 
+									data-width="none" 
+									data-height="none" 
+									data-whitespace="nowrap" 
+									data-transform_idle="o:1;" 
+									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+									data-transform_out="opacity:0;s:300;s:300;" 
+									data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+									data-start="1500" 
+									data-splitin="none" 
+									data-splitout="none" 
+									data-responsive_offset="on" 
+									style="z-index: 9; white-space: nowrap; font-size: 60px; line-height: 100px;text-align:center;">
+									<span class="icon-wildlife"></span>
+								</div>
+
+								<div class="tp-caption banner-heading-sub tp-resizeme rs-parallaxlevel-0" 
+									data-x="['center','center','center','center']" 
+									data-hoffset="['0','0','0','0']" 
+									data-y="['top','top','middle','middle']" 
+									data-voffset="['280','240','10','20']" 
+									data-fontsize="['48','48','44','28']"
+									data-lineheight="['85','85','50','50']" 
+									data-width="['1200','1000','750','480']" 
+									data-height="none" 
+									data-whitespace="normal" 
+									data-transform_idle="o:1;" 
+									data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+									data-mask_in="x:0px;y:0px;" 
+									data-mask_out="x:inherit;y:inherit;" 
+									data-start="1000" 
+									data-splitin="none" 
+									data-splitout="none" 
+									data-responsive_offset="on" 
+									style="z-index: 7; letter-spacing: 0; font-weight: 300; text-align: center; color: #ffffff">Conoce Cuzco 
+								</div>
+
+								<div class="tp-caption banner-heading-sub tp-resizeme rs-parallaxlevel-10"  
+									data-x="['center','center','center','center']" 
+									data-hoffset="['0','0','0','0']" 
+									data-y="['top','top','middle','middle']" 
+									data-voffset="['330','280','60','60']" 
+									data-fontsize="['60','60','60','40']" 
+									data-lineheight="['110','110','100','60']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="nowrap"
+									data-transform_idle="o:1;" 
+									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" 
+									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+									data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+									data-start="1000" 
+									data-splitin="none" 
+									data-splitout="none" 
+									data-responsive_offset="on" 
+									style="z-index: 8; padding-right: 10px; text-indent: 5px; font-weight: 900; white-space: nowrap;color: #ffffff">Tierra del Sol
+								</div>
+
+								<div class="tp-caption rev-btn  rs-parallaxlevel-10" id="slide-163-layer-2" 
+									data-x="['center','center','center','center']" 
+									data-hoffset="['0','0','0','0']" 
+									data-y="['middle','middle','middle','middle']" 
+									data-voffset="['150','160','180','150']" 
+									data-width="none"
+									data-height="none"
+									data-whitespace="nowrap"
+									data-transform_idle="o:1;"
+									data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeOut;"
+									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+									data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+									data-mask_out="x:inherit;y:inherit;" 
+									data-start="1250" 
+									data-splitin="none" 
+									data-splitout="none" 
+									data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]'
+									data-responsive_offset="on"> 
+									<a class="btn btn-banner" href="login.html">Registrarse</a>
+								</div>
+							</li>
+
+							<li data-index="rs-81" data-transition="slideoverup" data-slotamount="7"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-saveperformance="off"  data-title="The Menu" data-description="">
+								<!-- main image for revolution slide -->
+								<img alt="image description" src="img/banner/lago.jpg"  data-lazyload="img/banner/lago.jpg" data-bgposition="right center" data-kenburns="on" data-duration="30000" data-ease="Power1.easeOut" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+
+								<div class="tp-caption tp-resizeme" id="slide-897-layer1-7" 
+									data-x="['center','center','center','center']" 
+									data-hoffset="['0','0','0','0']" 
+									data-y="['top','top','middle','middle']" 
+									data-voffset="['160','120','-120','-70']" 
+									data-width="none" 
+									data-height="none" 
+									data-whitespace="nowrap" 
+									data-transform_idle="o:1;" 
+									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+									data-transform_out="opacity:0;s:300;s:300;" 
+									data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+									data-start="1500" 
+									data-splitin="none" 
+									data-splitout="none" 
+									data-responsive_offset="on" 
+									style="z-index: 9; white-space: nowrap; font-size: 60px; line-height: 100px;text-align:center;">
+									<span class="icon-hiking-camping"></span>
+								</div>
+
+								<div class="tp-caption banner-heading-sub tp-resizeme rs-parallaxlevel-0" 
+									data-x="['center','center','center','center']" 
+									data-hoffset="['0','0','0','0']" 
+									data-y="['top','top','middle','middle']" 
+									data-voffset="['280','240','10','20']" 
+									data-fontsize="['48','48','44','28']"
+									data-lineheight="['85','85','50','50']" 
+									data-width="['1200','1000','750','480']" 
+									data-height="none" 
+									data-whitespace="normal" 
+									data-transform_idle="o:1;" 
+									data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+									data-mask_in="x:0px;y:0px;" 
+									data-mask_out="x:inherit;y:inherit;" 
+									data-start="1000" 
+									data-splitin="none" 
+									data-splitout="none" 
+									data-responsive_offset="on" 
+									style="z-index: 7; letter-spacing: 0; font-weight: 300; text-align: center; color: #ffffff">Es tiempo
+								</div>
+
+								
+
+								<div class="tp-caption tp-resizeme banner-heading-sub rs-parallaxlevel-10"  
+									data-x="['center','center','center','center']" 
+									data-hoffset="['30','30','30','20']" 
+									data-y="['top','top','middle','middle']" 
+									data-voffset="['330','280','60','60']" 
+									data-fontsize="['60','60','60','40']" 
+									data-lineheight="['110','110','100','60']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="nowrap"
+									data-transform_idle="o:1;" 
+									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" 
+									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+									data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+									data-start="1000" 
+									data-splitin="none" 
+									data-splitout="none" 
+									data-responsive_offset="on" 
+									style="z-index: 8; padding-right: 10px; text-indent: 5px; font-weight: 900; white-space: nowrap;color: #ffffff"> De Nuevas Aventuras         
+								</div>
+
+								<div class="tp-caption rev-btn rs-parallaxlevel-10" id="slide-163-layer1-2" 
+									data-x="['center','center','center','center']" 
+									data-hoffset="['0','0','0','0']" 
+									data-y="['middle','middle','middle','middle']" 
+									data-voffset="['150','160','180','150']" 
+									data-width="none"
+									data-height="none"
+									data-whitespace="nowrap"
+									data-transform_idle="o:1;"
+									data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeOut;"
+									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+									data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+									data-mask_out="x:inherit;y:inherit;" 
+									data-start="800" 
+									data-splitin="none" 
+									data-splitout="none" 
+									data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]'
+									data-responsive_offset="on"> 
+									<a class="btn btn-banner" href="login.html">Registrarse</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="feature-block">
+					<div class="holder">
+						<ul>
+							<li>
+								<a href="#canoping">
+									<span class="ico">
+										<span class="icon-bungee"></span>
+									</span>
+									<span class="info">Canoping</span>
+								</a>
+							</li>
+							<li>
+								<a href="#paseos">
+									<span class="ico">
+										<span class="icon-hiking"></span>
+									</span>
+									<span class="info">Paseos &amp; Campamentos</span>
+								</a>
+							</li>
+							<li>
+								<a href="Flora_Fauna.html">
+									<span class="ico">
+										<span class="icon-wildlife"></span>
+									</span>
+									<span class="info">Flora &amp; Fauna</span>
+								</a>
+							</li>
+							<li>
+								<a href="#escalar">
+									<span class="ico">
+										<span class="icon-peak-climbing"></span>
+									</span>
+									<span class="info">Escalar</span>
+								</a>
+							</li>
+							<li>
+								<a href="#bicicleta">
+									<span class="ico">
+										<span class="icon-mountain-biking"></span>
+									</span>
+									<span class="info">Paseos en Bicicleta</span>
+								</a>
+							</li>
+							<li>
+								<a href="#acuaticos">
+									<span class="ico">
+										<span class="icon-scuba-diving"></span>
+									</span>
+									<span class="info">Deportes Acuaticos</span>
+								</a>
+							</li>
+							<li>
+								<a href="#pesca">
+									<span class="ico">
+										<span class="icon-hunting"></span>
+									</span>
+									<span class="info">Pesca &amp; Caza</span>
+								</a>
+							</li>
+							<li>
+								<a href="paquetes.html">
+									<span class="ico">
+										<span class="icon-boating"></span>
+									</span>
+									<span class="info">Promociones &amp; Paquetes </span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- main container -->
+			<main id="main">
+				<section class="content-block bg-white">
+					<div class="container">
+						<header class="content-heading">
+							<h2 class="main-heading">Visita Cuzco</h2>
+							<span class="main-subtitle">Cada rincón cuenta una historia y cada historia es cautivante, mística y acogedora.</span>
+							<div class="seperator"></div>
+						</header>
+						<div class="adventure-holder gallery-home-holder">
+							<div class="row">
+								<div class="col-md-6 img-block">
+									<!-- gallery list -->
+									<ul class="gallery-list gallery-with-icon">
+										<li>
+											<a  class="thumbnail">
+												<img src="img/banner/plazadearmas.jpg" height="165" width="170" alt="image description">
+												<span class="hover icon-diamond"></span>
+												<span class="info">Plaza de <br> Armas</span>
+											</a>
+										</li>
+										<li>
+											<a  class="thumbnail">
+												<img src="img/banner/ciudadelamachupichu.jpg" height="165" width="170" alt="image description">
+												<span class="hover icon-peak"></span>
+												<span class="info">Ciudadela <br>machu picchu</span>
+											</a>
+										</li>
+										<li>
+											<a  class="thumbnail">
+												<img src="img/banner/ciudadantigua.jpg" height="165" width="170" alt="image description">
+												<span class="hover icon-water"></span>
+												<span class="info">Ciudad <br>Antigua</span>
+											</a>
+										</li>
+										<li>
+											<a  class="thumbnail">
+												<img src="img/banner/exporecusco.jpg" height="165" width="170" alt="image description">
+												<span class="hover icon-asia"></span>
+												<span class="info">Paseos</span>
+											</a>
+										</li>
+										<li>
+											<a  class="thumbnail">
+												<img src="img/banner/tejados.jpg" height="165" width="170" alt="image description">
+												<span class="hover icon-arctic"></span>
+												<span class="info">Tejados <br>de Cuzco</span>
+											</a>
+										</li>
+										<li>
+											<a  class="thumbnail">
+												<img src="img/banner/sacsayhuaman-in-peru-7AVUFSJ.jpg" height="165" width="170" alt="image description">
+												<span class="hover icon-africa"></span>
+												<span class="info">Sacsayhuaman</span>
+											</a>
+										</li>
+										<li>
+											<a class="thumbnail">
+												<img src="img/banner/artesania.jpg" height="165" width="170" alt="image description">
+												<span class="hover icon-plant"></span>
+												<span class="info">Artesania</span>
+											</a>
+										</li>
+										<li>
+											<a  class="thumbnail">
+												<img src="img/banner/panoramic-view-of-rainbow-mountain-at-vinicunca-mo-LCQZ4AD.jpg" height="165" width="170" alt="image description">
+												<span class="hover icon-road"></span>
+												<span class="info">Montaña <br>Arcoiris</span>
+											</a>
+										</li>
+										<li>
+											<a  class="thumbnail">
+												<img src="img/banner/estanque de sal.jpg" height="165" width="170" alt="image description">
+												<span class="hover icon-water"></span>
+												<span class="info">Estanques <br>de Sal</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 text-block">
+									<div class="centered">
+										<h2 class="intro-heading">Cusco, declarada la capital histórica del Perú, en el ombligo del mundo... ¡Imperdible!</h2>
+										<p class="intro" style="text-align: justify;">Cusco es una de las ciudades más increíbles de América del Sur y uno de los principales destinos del mundo. Su nombre ‘Qosqo’ quiere decir ‘Ombligo del mundo’ en la lengua de los incas, el quechua. Hoy es reconocida como la ‘Capital arqueológica de América’ debido a sus templos incas y coloniales que sobrevivieron al tiempo. Que esperas para visitar sus principales atractivos turísticos: Sacsayhuaman, el Valle Sagrado, la Montaña 7 Colores y, por supuesto, Machu Picchu. </p>
+										<a href="Cultura.html" class="btn btn-info-sub btn-md btn-shadow radius">Saber Más</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- special block -->
+				<aside class="special-block">
+					<div class="container">
+						<p class="special-text" >Viaja a Cusco y disfruta de una aventura única <strong>¿Que esperas?</strong></p>
+					</div>
+				</aside>
+				<!-- article list holder -->
+				<div class="content-block content-spacing">
+					<div class="container">
+						<header class="content-heading">
+							<h2 class="main-heading">Principales Atractivos</h2>
+							<span class="main-subtitle">Cusco es uno de esos destinos en los que, por muchas veces que los visites, siempre te quedará algo por conocer</span>
+							<div class="seperator"></div>
+						</header>
+						<div class="content-holder">
+							<div class="row db-3-col">
+								<article class="col-sm-6 col-md-4 article has-hover-s3">
+									<div class="img-wrap">
+										<a href="Cultura.html">
+											<img src="img/banner/bailes.jpg" height="215" width="370" alt="image description">
+										</a>
+										<div class="img-caption text-uppercase">Cultura</div>
+										<div class="hover-article">
+											<div class="star-rating">
+												<span><span class="icon-star"></span></span>
+												<span><span class="icon-star"></span></span>
+												<span><span class="icon-star"></span></span>
+												<span><span class="icon-star"></span></span>
+												<span class="disable"><span class="icon-star"></span></span>
+											</div>
+											<div class="icons">
+												</div>
+											<div class="info-footer">
+												
+												<a href="Cultura.html" class="link-more">Ver más</a>
+											</div>
+										</div>
+									</div>
+									<h3 style="text-align: center;"><a href="Cultura.html">Cultura y Tradición</a></h3>
+									<p style="text-align: justify;">La mayoría de estos bailes se caracterizan por tener una fuerte influencia prehispánica, un colorido vestuario y una tradición que se busca mantener viva entre los turistas y pobladores.</p>
+								</article>
+								<article class="col-sm-6 col-md-4 article has-hover-s3">
+									<div class="img-wrap">
+										<a href="Flora_Fauna.html">
+											<img src="img/banner/florafauna.jpg" height="215" width="370" alt="image description">
+										</a>
+										<div class="img-caption text-uppercase">Flora y Fauna</div>
+										<div class="hover-article">
+											<div class="star-rating">
+												<span><span class="icon-star"></span></span>
+												<span><span class="icon-star"></span></span>
+												<span><span class="icon-star"></span></span>
+												<span><span class="icon-star"></span></span>
+												<span class="disable"><span class="icon-star"></span></span>
+											</div>
+											
+											<div class="info-footer">
+												
+												<a href="Flora_Fauna.html" class="link-more">Ver más</a>
+											</div>
+										</div>
+									</div>
+									<h3 style="text-align: center;"><a href="Flora_Fauna.html">Diversidad de Flora y Fauna</a></h3>
+									<p style="text-align: justify;">Cusco es conocido por contar con una gran diversidad de pisos ecológicos, donde cada uno de ellos cuenta con especies características de la zona.</p>
+								</article>
+								<article class="col-sm-6 col-md-4 article has-hover-s3">
+									<div class="img-wrap">
+										<a href="paquetes.html">
+											<img src="img/banner/Lugares.png.jpg" height="215" width="370" alt="image description">
+										</a>
+										<div class="img-caption text-uppercase">Sitios Turisticos</div>
+										<div class="hover-article">
+											<div class="star-rating">
+												<span><span class="icon-star"></span></span>
+												<span><span class="icon-star"></span></span>
+												<span><span class="icon-star"></span></span>
+												<span><span class="icon-star"></span></span>
+												<span class="disable"><span class="icon-star"></span></span>
+											</div>
+											
+											<div class="info-footer">
+												
+												<a href="paquetes.html" class="link-more">Ver más</a>
+											</div>
+										</div>
+									</div>
+									<h3 style="text-align: center;"><a href="paquetes.html">Principales lugares turisticos</a></h3>
+									<p style="text-align: justify;">La ciudad de Cusco es Patrimonio Mundial de la Unesco desde 1983. Está sobre los 3399 metros sobre el nivel del mar y fue el centro hegemónico del Tahuantinsuyo.</p>
+								</article>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- couter block -->
+				<aside class="count-block">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-6 col-md-3 block-1">
+								<div class="holder">
+									<span class="icon icon-step"></span>
+									<span class="info"><span class="counter">8354</span></span>
+									<span class="txt">Especies de animales</span>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-3 block-2">
+								<div class="holder">
+									<span class="icon icon-rural"></span>
+									<span class="info"><span class="counter">30</span></span>
+									<span class="txt">Lugares Imperdibles</span>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-3 block-3">
+								<div class="holder">
+									<span class="icon icon-tree"></span>
+									<span class="info"><span class="counter">10</span></span>
+									<span class="txt">Parques Nacionales</span>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-3 block-4">
+								<div class="holder">
+									<span class="icon icon-duration"></span>
+									<span class="info"><span class="counter">53</span></span>
+									<span class="txt">Dias Festivos al año</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+				<!-- featured adventure content -->
+				<div class="featured-content adventure-holder">
+					<div class="container-fluid">
+						<div class="row same-height">
+							<div class="col-md-6 image height">
+								<div class="bg-stretch">
+									<img src="img/banner/canoping.jpg" height="627" width="960" alt="image description" id="canoping">
+								</div>
+							</div>
+							<div class="col-md-6 text-block height">
+								<div class="centered">
+									<h2 class="intro-heading">Canoping de medio dia en Cusco</h2>
+									<p class="intro" style="text-align: justify;">Disfrute de la emoción sobre la meseta del Valle Sagrado. Mientras vuelas a través de la tirolesa, estarás rodeado por la belleza natural de los Andes.</p>
+									<a href="login.html" class="btn btn-primary btn-lg">Registarse</a>
+								</div>
+							</div>
+						</div>
+						<div class="row same-height">
+							<div class="col-md-6 image height">
+								<div class="bg-stretch">
+									<img src="img/banner/pasesosycampamento.jpg" height="627" width="960" alt="image description" id="paseos">
+								</div>
+							</div>
+							<div class="col-md-6 text-block height">
+								<div class="centered">
+									<h2 class="intro-heading">Paseos &amp; Campamentos </h2>
+									<p class="intro" style="text-align: justify;">Según Promperú, lo primero que deben tener en cuenta en sus planes es que siempre se debe acampar en lugares establecidos, llevar zapatos o botas para trekking así como ropa abrigadora y mochila impermeable.</p>
+									<a href="login.html" class="btn btn-primary btn-lg">Registarse</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="featured-content adventure-holder">
+					<div class="container-fluid">
+						<div class="row same-height">
+							<div class="col-md-6 image height">
+								<div class="bg-stretch">
+									<img src="img/banner/escalar.jpg" height="627" width="960" alt="image description" id="escalar"> 
+								</div>
+							</div>
+							<div class="col-md-6 text-block height">
+								<div class="centered">
+									<h2 class="intro-heading">Escalar</h2>
+									<p class="intro" style="text-align: justify;">¿Alguna vez imaginaste comer un delicioso almuerzo, dentro de una cápsula transparente con impresionantes vistas a la montaña? Podrás combinar un día de aventura y mucha emoción con una exquisita comida, y deslumbrantes paisajes. Con este tour tendrás la oportunidad de vivir un momento inolvidable y único.</p>
+									<a href="login.html" class="btn btn-primary btn-lg">Registarse</a>
+								</div>
+							</div>
+						</div>
+						<div class="row same-height">
+							<div class="col-md-6 image height">
+								<div class="bg-stretch">
+									<img src="img/banner/bici.jpg" height="627" width="960" alt="image description" id="bicicleta">
+								</div>
+							</div>
+							<div class="col-md-6 text-block height">
+								<div class="centered">
+									<h2 class="intro-heading">Paseos en Bicicleta </h2>
+									<p class="intro" style="text-align: justify;">Esta excursión es una de las mejores caminatas alternativas en Cusco, capturan la energía majestuosa de Machu Picchu a través de las antiguas rutas diseñadas por los incas y que te harán sentir lleno de adrenalina. Esta excursión dura 4 días e incluye deportes de aventura como ciclismo, rafting, tirolesa y senderismo. Salidas diarias todo el año, reserva anticipada.</p>
+									<a href="login.html" class="btn btn-primary btn-lg">Registarse</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="featured-content adventure-holder">
+					<div class="container-fluid">
+						<div class="row same-height">
+							<div class="col-md-6 image height">
+								<div class="bg-stretch">
+									<img src="img/banner/rafting-PPSVG38.jpg" height="627" width="960" alt="image description" id="acuaticos">
+								</div>
+							</div>
+							<div class="col-md-6 text-block height">
+								<div class="centered">
+									<h2 class="intro-heading">Deportes Acuaticos</h2>
+									<p class="intro" style="text-align: justify;">Embárquese en una emocionante aventura al aire libre que combina el rafting en aguas bravas con el forro de cremallera y satisface su necesidad de velocidad. Salida de Cusco hacia Oropesa, donde puedes aliviar tus mariposas con un bocado del pan icónico de la ciudad antes de llegar al río Vilcanota. Enfréntate a los rápidos de clase III y IV y lucha contra las intensas olas a medida que avanzas río abajo, disfrutando del extraordinario paisaje de los Andes</p>
+									<a href="login.html" class="btn btn-primary btn-lg">Registarse</a>
+								</div>
+							</div>
+						</div>
+						<div class="row same-height">
+							<div class="col-md-6 image height">
+								<div class="bg-stretch">
+									<img src="img/banner/woman-fishing-on-fishing-rod-spinning-in-norway-PHC3UJC.jpg" height="627" width="960" alt="image description" id="pesca">
+								</div>
+							</div>
+							<div class="col-md-6 text-block height">
+								<div class="centered">
+									<h2 class="intro-heading">Pesca de trucha </h2>
+									<p class="intro" style="text-align: justify;">Pachar Cocha es un lago que forma parte de la comunidad Chumpe y se encuentra en las tierras altas del Valle Sagrado de los Incas, a 1 hora y 30 minutos de la ciudad del Cusco. La comunidad local es muy amable y el paisaje andino es verdaderamente el más impresionante de todos los lagos de los Andes. En este lago en particular la pesca es muy emocionante y divertida ya que la disponibilidad de la trucha arco iris es enorme.</p>
+									<a href="login.html" class="btn btn-primary btn-lg">Registarse</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- browse block -->
+				<div class="browse-block">
+					<div class="browse-destination column">
+						<a href="paquetes.html"><span>LUGARES TURISTICOS</span></a>
+					</div>
+					<div class="browse-adventures column">
+						<a href="#canoping"><span>AVENTURAS</span></a>
+					</div>
+				</div>
+				
+				<!-- testimonial block -->
+				<div class="testimonial-holder parallax" data-stellar-background-ratio="0.25" id="testimonial-home-page">
+					<div class="container">
+						<div id="testimonial-home-slide">
+							<div class="slide">
+								<blockquote class="testimonial-quote">
+									<div class="img">
+										<img src="img/banner/javier.png" height="112" width="112" alt="image description">
+									</div>
+									<div class="text">
+										<cite>Javier Martinez</cite>
+										<q>Durante todo este ciclo pude aprender muchas cosas nuevas que complementadas con información obtenida en internet y practica me permitieron desarrollar esta web junto a mis compañeros</q>
+									</div>
+								</blockquote>
+							</div>
+							<div class="slide">
+								<blockquote class="testimonial-quote">
+									<div class="img">
+										<img src="img/banner/ruth.png" height="112" width="112" alt="image description">
+									</div>
+									<div class="text">
+										<cite>Ruth Farfan</cite>
+										<q>En este primer ciclo pude aprender lo que es la creacion de la pagina web, en poder realizar el diseño , los colores , imagenes en fin fue una linda experiencia con mis compañeros.</q>
+									</div>
+								</blockquote>
+							</div>
+							<div class="slide">
+								<blockquote class="testimonial-quote">
+									<div class="img">
+										<img src="img/thumbs/img-03.jpg" height="112" width="112" alt="image description">
+									</div>
+									<div class="text">
+										<cite>RIYA YAHIDA - SPAIN</cite>
+										<q>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.”</q>
+									</div>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<!-- main footer -->
+		<footer id="footer">
+			<div class="container">
+				<!-- newsletter form -->
+				<form action="php/subscribe.html" id="signup" method="post" class="newsletter-form">
+					<fieldset>
+						<div class="input-holder">
+							<input type="email" class="form-control" placeholder="Dejanos tu Correo" name="subscriber_email" id="subscriber_email">
+							<input type="submit" value="Enviar">
+						</div>
+						<span class="info" id="subscribe_message">Para recibir las ultimas novedades de viajes.</span>
+					</fieldset>
+				</form>
+				
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<!-- copyright -->
+							<strong class="copyright"><i class="fa fa-copyright"></i> Página realizada con fines educativos por estudiantes de <a href="#"> CERTUS</a></strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- scroll to top -->
+	<div class="scroll-holder text-center">
+		<a href="javascript:" id="scroll-to-top"><i class="icon-arrow-down"></i></a>
+	</div>
+	<!-- jquery library -->
+	<script src="vendors/jquery/jquery-2.1.4.min.js"></script>
+	<!-- external scripts -->
+	<script src="vendors/bootstrap/javascripts/bootstrap.min.js"></script>
+	<script src="vendors/jquery-placeholder/jquery.placeholder.min.js"></script>
+	<script src="vendors/match-height/jquery.matchHeight.js"></script>
+	<script src="vendors/wow/wow.min.js"></script>
+	<script src="vendors/stellar/jquery.stellar.min.js"></script>
+	<script src="vendors/validate/jquery.validate.js"></script>
+	<script src="vendors/waypoint/waypoints.min.js"></script>
+	<script src="vendors/counter-up/jquery.counterup.min.js"></script>
+	<script src="vendors/jquery-ui/jquery-ui.min.js"></script>
+	<script src="vendors/jQuery-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	<script src="vendors/fancybox/jquery.fancybox.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="vendors/jcf/js/jcf.js"></script>
+	<script src="vendors/jcf/js/jcf.select.js"></script>
+	<script src="js/mailchimp.js"></script>
+	<script src="vendors/retina/retina.min.js"></script>
+	<script src="vendors/bootstrap-datetimepicker-master/dist/js/bootstrap-datepicker.js"></script>
+	<!-- custom jquery script -->
+	<script src="js/jquery.main.js"></script>
+	<!-- revolution slider plugin -->
+	<script type="text/javascript" src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<!-- rs5.0 core files -->
+	<script type="text/javascript" src="vendors/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+	<script type="text/javascript" src="vendors/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+	<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<!-- revolutions slider script -->
+	<script src="js/revolution.js"></script>
+</body>
+</html>
